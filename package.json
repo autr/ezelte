@@ -1,13 +1,19 @@
 {
-  "name": "svelte-web-components-template",
-  "description": "A base template for building a shareable web components library with Svelte",
+  "name": "ezelte",
+  "description": "ezipe web-components",
   "version": "1.0.0",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "keywords": [
     "svelte",
     "web-components",
-    "library"
+    "library",
+    "ezapi",
+    "ezlib",
+    "ezelte",
+    "ezipe",
+    "eze",
+    "ezeze"
   ],
   "scripts": {
     "start": "live-server dist",
