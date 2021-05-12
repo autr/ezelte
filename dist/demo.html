@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Web Components</title>
+	<link rel='stylesheet' href='./demo.css'>
+
+	<script defer src='./index.js'></script>
+</head>
+<body>
+	<div class="flex row-stretch-flex-start">
+		<list-signup 
+			class="grow p1"
+			root="http://localhost:8000" 
+			user="autr" 
+			css="./demo.css" 
+			interests="artworks:news,code:open source,personal:miscelleny"></list-signup>
+		<list-update 
+			class="grow p1"
+			root="http://localhost:8000" 
+			user="autr" 
+			css="./demo.css" 
+			interests="artworks:news,code:open source,personal:miscelleny"></list-update>
+	</div>
+</body>
+</html>
+
