@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte'
-    import fetcher from 'fetcheriser'
+    import fetcher from './fetcheriser.js'
     import common from './common.js'
 
 
@@ -78,6 +78,7 @@
     `
 
     function parse( long ) {
+        if (typeof(interests) != 'string') return long
         return long.split(',').filter( str => str != '').map( pair => {
             return { 
                 key: pair.split(':')[0],
@@ -85,6 +86,7 @@
             }
         })
     }
+
 
     $: parsed =  typeof(interests) == 'string' ? parse( interests ) : interests
 
