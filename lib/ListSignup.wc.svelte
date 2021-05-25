@@ -11,6 +11,12 @@
     export let message = 'Thank you, you have been subscribed as:'
     export let link = '/'
     export let button = 'return'
+    export let init = ''
+
+    let class_ = ''
+    export { class_ as class }
+    let style_ = ''
+    export { style_ as style }
 
 </script>
-<ListForm {interests} {root} {user} {css} {message} {link} {button} editor={false} />
+<ListForm {interests} {root} {user} {css} {message} {link} {button} {style_} {class_} {init} editor={false} />

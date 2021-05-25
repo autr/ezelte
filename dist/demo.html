@@ -9,21 +9,27 @@
 
 	<script defer src='./index.js'></script>
 </head>
-<body>
-	<div class="flex row-stretch-flex-start">
-		<list-signup 
-			class="grow p1"
-			root="http://localhost:8000" 
-			user="autr" 
-			css="./demo.css" 
-			interests="artworks:news,code:open source,personal:miscelleny"></list-signup>
-		<list-update 
-			class="grow p1"
-			root="http://localhost:8000" 
-			user="autr" 
-			css="./demo.css" 
-			interests="artworks:news,code:open source,personal:miscelleny"></list-update>
-	</div>
+<body class="sassis">
+	<main class="flex row-stretch-flex-start">
+		<div class="p1">
+			<h2 class="f1 bb2-solid mb1 sans-serif">List Signup</h2>
+			<list-signup 
+				class="flex column-stretch-flex-start cmb1"
+				root="http://localhost:8000" 
+				user="autr" 
+				css="./demo.css" 
+				interests="artworks:news,code:open source,personal:miscelleny"></list-signup>
+			</div>
+		<div class="p1">
+			<h2 class="f1 bb2-solid mb1 sans-serif">List Signup</h2>
+			<list-update 
+				class="flex column-stretch-flex-start cmb1"
+				root="http://localhost:8000" 
+				user="autr" 
+				css="./demo.css" 
+				interests="artworks:news,code:open source,personal:miscelleny"></list-update>
+		</div>
+	</main>
 </body>
 </html>
 
