@@ -4,6 +4,7 @@
   "version": "1.0.1",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
+  "svelte": "lib/index.js",
   "keywords": [
     "svelte",
     "web-components",
