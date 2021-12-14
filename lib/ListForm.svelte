@@ -6,6 +6,7 @@
     const browser = typeof window !== 'undefined' && typeof window.document !== 'undefined'
 
     function getUrlParams(search) {
+        console.log('URL PARAMS', search)
         let hashes = search.slice(search.indexOf('?') + 1).split('&')
         return hashes.reduce((params, hash) => {
             let [key, val] = hash.split('=')
@@ -35,13 +36,12 @@
     let error, disabled, done, invalid
 
     function setAddress( editor_, interests_ ) {
-        let search = browser ? window.location.search : ''
+        let search = browser ? window.location.search || '' : ''
         search = search == '' || !browser ? init : getUrlParams( search )
-        const params = getUrlParams( search )
-        address = params.address
+        address = search.address
         if (address == '') address = null
         const ints = parse(interests_ || '')
-        const arr = (params.vars || '').split(',')
+        const arr = (search.vars || '').split(',')
         arr.forEach( key => {
             if ( ints.find( int => int.key == key) ) vars[key] = true
         })
